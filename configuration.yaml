@@ -1,0 +1,42 @@
+homeassistant:
+  customize: !include customize.yaml
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+# Enables the frontend
+frontend:
+  themes: !include themes.yaml
+  javascript_version: latest
+# ffmpeg
+ffmpeg: 
+##
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+input_select: !include input_select.yaml
+sensor: !include sensor.yaml
+camera: !include camera.yaml
+switch: !include switch.yaml
+binary_sensor: !include binary_sensor.yaml
+recorder: !include recorder.yaml
+
+
+# SMARTLIFE
+tuya:
+  username: !secret tuya_name 
+  password: !secret tuya_psw 
+  country_code: 39
+  platform: smart_life
+
+
+# ngrok
+ngrok:
+  auth_token: !secret ngrok_auth
+  os_version: 'Linux (32-Bit)'
+  ip_address: !secret ngrok_ip
+  port: 8123
+  protocol: 'http'
+
+
+#####______#####
+#––––––––––––––#
+################

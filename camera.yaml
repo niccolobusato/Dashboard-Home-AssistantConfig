@@ -1,0 +1,31 @@
+  - platform: ffmpeg
+    input: 'http://192.168.1.97:14511/videostream.cgi?user=admin&pwd=88888888'
+    name: Entrata
+  - platform: ffmpeg
+    input: 'rtsp://192.168.1.125/ch0_1.h264'
+    name: Cancelletto
+  - platform: foscam
+    ip: 192.168.1.198
+    username: !secret foscam_usr_1
+    password: !secret foscam_psw_1
+  - platform: foscam
+    ip: 192.168.1.103
+    name: Garage
+    username: !secret foscam_usr_2
+    password: !secret foscam_psw_2
+  - platform: onvif
+    host: 192.168.1.15
+    name: test
+  - platform: generic
+    name: Ultimo movimento Esterno
+    still_image_url: !secret esterno
+  - platform: generic
+    name: Ultimo movimento Garage
+    still_image_url: !secret garage
+  - platform: generic
+    name: Ultimo campanello
+    still_image_url: !secret campanello
+  - platform: ffmpeg
+    input: 'rtsp://192.168.1.125/ch0_1.h264'
+    name: Cancelletto Crop
+    extra_arguments: -vf crop=300:200:110:20

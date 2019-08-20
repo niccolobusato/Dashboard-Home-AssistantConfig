@@ -1,0 +1,101 @@
+  anna_status_dropdown:
+    name: Annalisa
+    options:
+      - Casa
+      - Bar
+      - Nonna Giusy
+      - Fuori
+    initial: Fuori
+  cla_status_dropdown:
+    name: Claudio
+    options:
+      - Casa
+      - Bar
+      - Nonna Giusy
+      - Fuori
+    initial: Fuori
+  ele_status_dropdown:
+    name: Eleonora
+    options:
+      - Casa
+      - Bar
+      - Nonna Giusy
+      - Fuori
+    initial: Fuori
+  nic_status_dropdown:
+    name: Niccolò
+    options:
+      - Casa
+      - Lavoro
+      - Palestra
+      - Casa Christina
+      - Bar
+      - Nonna Giusy
+      - Fuori
+    initial: Fuori
+  cucina_status_dropdown:
+    name: Cucina
+    options:
+      - Accesa
+      - Spenta
+    initial: Spenta
+  vetrina_status_dropdown:
+    name: Vetrina
+    options:
+      - Accesa
+      - Spenta
+    initial: Spenta
+  falso_status_dropdown:
+    name: Falso
+    options:
+      - Cucina
+      - Vetrina
+      - Clima
+      - Niente
+      - mot1
+      - mot2
+      - hassion
+      - ngrok
+    initial: Niente
+  porta_status_dropdown:
+    name: Porta Scale
+    options:
+      - Aperta
+      - Chiusa
+    initial: Chiusa
+  clima_status_dropdown:
+    name: Clima
+    options:
+      - Acceso
+      - Spento
+    initial: Spento
+  mot1_status_dropdown:
+    name: Notifica Movimento Porta
+    options:
+      - Acceso
+      - Spento
+    initial: Acceso
+  mot2_status_dropdown:
+    name: Notifica Movimento Garage
+    options:
+      - Acceso
+      - Spento
+    initial: Acceso
+  cond1_status_dropdown:
+    name: Mostra Esterno
+    options:
+      - Acceso
+      - Spento
+    initial: Spento
+  cond2_status_dropdown:
+    name: Mostra Garage
+    options:
+      - Acceso
+      - Spento
+    initial: Spento
+  cond3_status_dropdown:
+    name: Mostra Cancello
+    options:
+      - Acceso
+      - Spento
+    initial: Spento

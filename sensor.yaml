@@ -1,0 +1,46 @@
+  - platform: time_date
+    display_options:
+      - 'time'
+      - 'date'
+      - 'date_time'
+  - platform: template
+    sensors:
+      anna_status:
+        value_template: '{{ states.input_select.anna_status_dropdown.state }}'
+        friendly_name: 'Annlisa'
+      nic_status:
+        value_template: '{{ states.input_select.nic_status_dropdown.state }}'
+        friendly_name: 'Niccolò'
+      cla_status:
+        value_template: '{{ states.input_select.cla_status_dropdown.state }}'
+        friendly_name: 'Claudio'
+      ele_status:
+        value_template: '{{ states.input_select.ele_status_dropdown.state }}'
+        friendly_name: 'Eleonora'
+      cucina_status:
+        value_template: '{{ states.input_select.cucina_status_dropdown.state }}'
+        friendly_name: 'Cucina'
+      vetrina_status:
+        value_template: '{{ states.input_select.vetrina_status_dropdown.state }}'
+        friendly_name: 'Vetrina'
+      porta_status:
+        value_template: '{{ states.input_select.porta_status_dropdown.state }}'
+        friendly_name: 'Porta'
+      clima_status:
+        value_template: '{{ states.input_select.clima_status_dropdown.state }}'
+        friendly_name: 'Clima'
+      mot1_status:
+        value_template: '{{ states.input_select.mot1_status_dropdown.state }}'
+        friendly_name: 'Mot1'
+      mot2_status:
+        value_template: '{{ states.input_select.mot2_status_dropdown.state }}'
+        friendly_name: 'Mot2'
+      cond1_status:
+        value_template: '{{ states.input_select.cond1_status_dropdown.state }}'
+        friendly_name: 'Cond2'
+      cond2_status:
+        value_template: '{{ states.input_select.cond2_status_dropdown.state }}'
+        friendly_name: 'Cond2'
+      cond3_status:
+        value_template: '{{ states.input_select.cond3_status_dropdown.state }}'
+        friendly_name: 'Cond3'

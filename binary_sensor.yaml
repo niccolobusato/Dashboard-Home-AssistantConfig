@@ -1,0 +1,20 @@
+  - platform: template
+    sensors:
+      cucinatest:
+        value_template: "{{ is_state('sensor.cucina_status', 'Accesa') }}"
+      vetrinatest:
+        value_template: "{{ is_state('sensor.vetrina_status', 'Accesa') }}"
+      portatest:
+        value_template: "{{ is_state('sensor.porta_status', 'Aperta') }}"
+      clima:
+        value_template: "{{ is_state('sensor.clima_status', 'Acceso') }}"
+      mot1:
+        value_template: "{{ is_state('sensor.mot1_status', 'Acceso') }}"
+      mot2:
+        value_template: "{{ is_state('sensor.mot2_status', 'Acceso') }}"
+      cond1:
+        value_template: "{{ is_state('sensor.cond1_status', 'Acceso') }}"
+      cond2:
+        value_template: "{{ is_state('sensor.cond2_status', 'Acceso') }}"
+      cond3:
+        value_template: "{{ is_state('sensor.cond3_status', 'Acceso') }}"

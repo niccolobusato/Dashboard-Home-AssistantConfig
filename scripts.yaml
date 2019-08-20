@@ -1,0 +1,182 @@
+'1562883035660':
+  alias: annalisa a casa
+  sequence:
+  - data:
+      entity_id: input_select.anna_status_dropdown
+      option: Casa
+    service: input_select.select_option
+'1562883453691':
+  alias: annalisa bar
+  sequence:
+  - data:
+      entity_id: input_select.anna_status_dropdown
+      option: Bar
+    service: input_select.select_option
+'1562883494371':
+  alias: anna - giusy
+  sequence:
+  - data:
+      entity_id: input_select.anna_status_dropdown
+      option: Nonna Giusy
+    service: input_select.select_option
+'1562883542323':
+  alias: anna fuori
+  sequence:
+  - data:
+      entity_id: input_select.anna_status_dropdown
+      option: Fuori
+    service: input_select.select_option
+'1562883572979':
+  alias: claudio fuori
+  sequence:
+  - data:
+      entity_id: input_select.cla_status_dropdown
+      option: Fuori
+    service: input_select.select_option
+'1562883599234':
+  alias: claudio casa
+  sequence:
+  - data:
+      entity_id: input_select.cla_status_dropdown
+      option: Casa
+    service: input_select.select_option
+'1562883621449':
+  alias: claudio bar
+  sequence:
+  - data:
+      entity_id: input_select.cla_status_dropdown
+      option: Bar
+    service: input_select.select_option
+'1562883654262':
+  alias: ele fuori
+  sequence:
+  - data:
+      entity_id: input_select.ele_status_dropdown
+      option: Fuori
+    service: input_select.select_option
+'1562883676821':
+  alias: ele bar
+  sequence:
+  - data:
+      entity_id: input_select.ele_status_dropdown
+      option: Bar
+    service: input_select.select_option
+'1562883715863':
+  alias: ele casa
+  sequence:
+  - data:
+      entity_id: input_select.ele_status_dropdown
+      option: Casa
+    service: input_select.select_option
+'1562883739093':
+  alias: ele - giusy
+  sequence:
+  - data:
+      entity_id: input_select.ele_status_dropdown
+      option: Nonna Giusy
+    service: input_select.select_option
+'1562961196334':
+  alias: nic fuori
+  sequence:
+  - data:
+      entity_id: input_select.nic_status_dropdown
+      option: Fuori
+    service: input_select.select_option
+'1562961233374':
+  alias: nic lavoro
+  sequence:
+  - data:
+      entity_id: input_select.nic_status_dropdown
+      option: Lavoro
+    service: input_select.select_option
+'1562961260725':
+  alias: nic christina
+  sequence:
+  - data:
+      entity_id: input_select.nic_status_dropdown
+      option: Casa Christina
+    service: input_select.select_option
+'1562961297562':
+  alias: nic bar
+  sequence:
+  - data:
+      entity_id: input_select.nic_status_dropdown
+      option: Bar
+    service: input_select.select_option
+'1562962900142':
+  alias: nic casa
+  sequence:
+  - data:
+      entity_id: input_select.nic_status_dropdown
+      option: Casa
+    service: input_select.select_option
+'1562962937448':
+  alias: nic giusy
+  sequence:
+  - data:
+      entity_id: input_select.nic_status_dropdown
+      option: Nonna Giusy
+    service: input_select.select_option
+'1563004380775':
+  alias: cucina on
+  sequence:
+  - data:
+      entity_id: input_select.cucina_status_dropdown
+      option: Accesa
+    service: input_select.select_option
+'1563004479219':
+  alias: cucina off
+  sequence:
+  - data:
+      entity_id: input_select.cucina_status_dropdown
+      option: Spenta
+    service: input_select.select_option
+'1563037375097':
+  alias: trigger per node red cucina
+  sequence:
+  - data:
+      entity_id: input_select.falso_status_dropdown
+      option: Cucina
+    service: input_select.select_option
+'1563038623021':
+  alias: trigger node red per vetrina
+  sequence:
+  - data:
+      entity_id: input_select.falso_status_dropdown
+      option: Vetrina
+    service: input_select.select_option
+'1563039514514':
+  alias: vetrina off
+  sequence:
+  - data:
+      entity_id: input_select.vetrina_status_dropdown
+      option: Spenta
+    service: input_select.select_option
+'1563039551123':
+  alias: vetrina on
+  sequence:
+  - data:
+      entity_id: input_select.vetrina_status_dropdown
+      option: Accesa
+    service: input_select.select_option
+'1563393937663':
+  alias: trigger node red clima
+  sequence:
+  - data:
+      entity_id: input_select.falso_status_dropdown
+      option: Clima
+    service: input_select.select_option
+'1563394735213':
+  alias: mot 1 switch
+  sequence:
+  - data:
+      entity_id: input_select.falso_status_dropdown
+      option: mot1
+    service: input_select.select_option
+'1563395398271':
+  alias: mot 2 switch
+  sequence:
+  - data:
+      entity_id: input_select.falso_status_dropdown
+      option: mot2
+    service: input_select.select_option
