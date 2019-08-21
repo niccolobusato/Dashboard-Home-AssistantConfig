@@ -4,7 +4,7 @@ Dashboard for my tiny smart home 🏠. Maybe in an OVER-COMPLICATED way 💥
 Hass.io running on Proxmox VE. </br>
 2GB of Ram, 1 Socket & 1 Cores on an old HP Thin Client t610 📠 <i>(same one as the <a href="https://github.com/niccolobusato/Main-Home-AssistantConfig">Main HA</a>)</i>. 
 </br>
-Currently running two Hass.io instances, the Dashboard is showed below but it's only a "one page" shwoing the most relevant information from the Main one that you can find <a href="https://github.com/niccolobusato/Main-Home-AssistantConfig">here</a>.
+Currently running two Hass.io instances, the Dashboard is showed below but it's only a "one page" showing the most relevant information from the Main one that you can find <a href="https://github.com/niccolobusato/Main-Home-AssistantConfig">here</a>.
 </br> </br>
 
 ## Main View
