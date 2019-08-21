@@ -18,6 +18,9 @@ Using a combinations of "input_select", template "sensor", template "binary_sens
 </br>
 Everything is controlled via Node-RED hosted on the Main HA. Every time anything changes on the Main instance Node-RED will change on the Dashboard instance the "input_select" option via "input_select.select_option" service in Node-RED. Same thing will do when something is going to be tapped on the Dashboard it will change the "input_select" option via "input_select.select_option" service with a script, Node-Red will notice the change and send a command to the Main instance effecting the changes.
 
+## How it works
+<img src="/www/images/FLOW.gif?raw=true">
+
 
  
 
