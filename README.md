@@ -21,7 +21,8 @@ Everything is controlled via Node-RED hosted on the Main HA. Every time anything
 ## How it works
 <img src="/www/images/FLOW.gif?raw=true">
 
-
+## Ngrok
+I use Ngrok custom component form <a href="https://github.com/vincenzosuraci/hassio_ngrok?sfns=mo">Vincenzo Suraci</a> that allows me to access (if needed) to my dashboard from the internet.
  
 
 
