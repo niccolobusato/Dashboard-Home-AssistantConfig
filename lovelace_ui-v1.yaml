@@ -1,0 +1,300 @@
+cch:
+  exceptions: []
+  notifications: clock
+resources:
+  - type: module
+    url: /local/custom-lovelace/compact-custom-header/compact-custom-header.js
+title: Dashboard
+views:
+  - cards:
+      - cards:
+          - entities:
+              - entity: sensor.cla_status
+              - entity: sensor.nic_status
+              - entity: sensor.anna_status
+              - entity: sensor.ele_status
+              - entity: binary_sensor.portatest
+            show_name: true
+            show_state: true
+            type: glance
+          - elements:
+              - entity: sensor.time
+                style:
+                  color: white
+                  font-size: 15vw
+                  font-weight: bold
+                  left: 50%
+                  top: 50%
+                type: state-label
+            image: /local/sfondo.jpg
+            type: picture-elements
+          - card:
+              camera_image: camera.ultimo_movimento_esterno
+              entities:
+                - camera.foscam_camera
+              title: Movimento esterno
+              type: picture-glance
+            conditions:
+              - entity: binary_sensor.cond1
+                state: 'on'
+            type: conditional
+          - card:
+              camera_image: camera.ultimo_movimento_garage
+              entities:
+                - camera.garage
+              title: Movimento Garage
+              type: picture-glance
+            conditions:
+              - entity: binary_sensor.cond2
+                state: 'on'
+            type: conditional
+          - card:
+              camera_image: camera.cancelletto_crop
+              entities:
+                - camera.cancelletto
+              title: Hanno suonato il campanello
+              type: picture-glance
+            conditions:
+              - entity: binary_sensor.cond3
+                state: 'on'
+            type: conditional
+          - cards:
+              - entity: light.06200231b4e62d1f2741
+                icon: 'mdi:track-light'
+                name: Entrata
+                tap_action:
+                  action: toggle
+                type: entity-button
+              - entity: light.78841158840d8ea0baf5
+                icon: 'mdi:track-light'
+                name: Portico
+                tap_action:
+                  action: toggle
+                type: entity-button
+              - entity: light.60707618ecfabc23078c
+                icon: 'mdi:track-light'
+                name: Garage
+                tap_action:
+                  action: toggle
+                type: entity-button
+            type: horizontal-stack
+          - cards:
+              - entity: binary_sensor.vetrinatest
+                hold_action:
+                  action: more-info
+                icon: 'mdi:lamp'
+                name: Luci vetrina
+                show_icon: true
+                show_name: true
+                tap_action:
+                  action: call-service
+                  service: script.1563038623021
+                type: entity-button
+              - entity: binary_sensor.cucinatest
+                hold_action:
+                  action: more-info
+                icon: 'mdi:ceiling-light'
+                name: Cucina
+                show_icon: true
+                show_name: true
+                tap_action:
+                  action: call-service
+                  service: script.1563037375097
+                type: entity-button
+              - entity: binary_sensor.clima
+                hold_action:
+                  action: more-info
+                icon: 'mdi:air-conditioner'
+                name: Clima
+                show_icon: true
+                show_name: true
+                tap_action:
+                  action: call-service
+                  service: script.1563393937663
+                type: entity-button
+            type: horizontal-stack
+          - cards:
+              - camera_image: camera.cancelletto
+                entities:
+                  - camera.cancelletto
+                title: Cancelletto
+                type: picture-glance
+              - camera_image: camera.garage
+                entities:
+                  - camera.garage
+                  - switch.mot2
+                title: Garage
+                type: picture-glance
+            type: horizontal-stack
+          - camera_image: camera.foscam_camera
+            entities:
+              - camera.foscam_camera
+              - switch.mot1
+            title: Esterno
+            type: picture-glance
+          - camera_image: camera.garage
+            entities:
+              - camera.garage
+              - switch.mot2
+            title: Garage
+            type: picture-glance
+          - camera_image: camera.cancelletto
+            entities:
+              - camera.cancelletto
+            title: Cancelletto
+            type: picture-glance
+          - camera_image: camera.entrata
+            entities:
+              - camera.entrata
+            title: Garage Interno
+            type: picture-glance
+        type: vertical-stack
+    badges: []
+    panel: true
+    title: ipad
+  - cards:
+      - cards:
+          - entities:
+              - entity: device_tracker.master_life360_claudio
+              - entity: device_tracker.master_niccolo
+              - entity: device_tracker.master_life360_annalisa
+                name: Annalisa
+              - entity: device_tracker.master_life360_eleonora_busato
+              - entity: binary_sensor.master_porta_delle_scale
+            show_name: true
+            show_state: true
+            type: glance
+          - elements:
+              - entity: sensor.time
+                style:
+                  color: white
+                  font-size: 15vw
+                  font-weight: bold
+                  left: 50%
+                  top: 50%
+                type: state-label
+            image: /local/sfondo.jpg
+            type: picture-elements
+          - card:
+              camera_image: camera.ultimo_movimento_esterno
+              entities:
+                - camera.foscam_camera
+              title: Movimento esterno
+              type: picture-glance
+            conditions:
+              - entity: binary_sensor.cond1
+                state: 'on'
+            type: conditional
+          - card:
+              camera_image: camera.ultimo_movimento_garage
+              entities:
+                - camera.garage
+              title: Movimento Garage
+              type: picture-glance
+            conditions:
+              - entity: binary_sensor.cond2
+                state: 'on'
+            type: conditional
+          - card:
+              camera_image: camera.cancelletto_crop
+              entities:
+                - camera.cancelletto
+              title: Hanno suonato il campanello
+              type: picture-glance
+            conditions:
+              - entity: binary_sensor.cond3
+                state: 'on'
+            type: conditional
+          - cards:
+              - entity: light.06200231b4e62d1f2741
+                icon: 'mdi:track-light'
+                name: Entrata
+                tap_action:
+                  action: toggle
+                type: entity-button
+              - entity: light.78841158840d8ea0baf5
+                icon: 'mdi:track-light'
+                name: Portico
+                tap_action:
+                  action: toggle
+                type: entity-button
+              - entity: light.60707618ecfabc23078c
+                icon: 'mdi:track-light'
+                name: Garage
+                tap_action:
+                  action: toggle
+                type: entity-button
+            type: horizontal-stack
+          - cards:
+              - entity: switch.master_sonoff_10003eff18
+                hold_action:
+                  action: more-info
+                icon: 'mdi:lamp'
+                name: Luci vetrina
+                show_icon: true
+                show_name: true
+                tap_action:
+                  action: toggle
+                type: entity-button
+              - entity: light.master_koogeek_socket_a27269
+                hold_action:
+                  action: more-info
+                icon: 'mdi:ceiling-light'
+                name: Cucina
+                show_icon: true
+                show_name: true
+                tap_action:
+                  action: toggle
+                type: entity-button
+              - entity: switch.master_clima
+                hold_action:
+                  action: more-info
+                icon: 'mdi:air-conditioner'
+                name: Clima
+                show_icon: true
+                show_name: true
+                tap_action:
+                  action: toggle
+                type: entity-button
+            type: horizontal-stack
+          - cards:
+              - camera_image: camera.cancelletto
+                entities:
+                  - binary_sensor.master_campanello
+                  - automation.master_notifica_campanello
+                title: Cancelletto
+                type: picture-glance
+              - camera_image: camera.garage
+                entities:
+                  - binary_sensor.master_pir_garage
+                  - automation.master_movimento_garage_notifica
+                title: Garage
+                type: picture-glance
+            type: horizontal-stack
+          - camera_image: camera.foscam_camera
+            entities:
+              - binary_sensor.master_pir_esterno
+              - automation.master_test_ir_sensor
+            title: Esterno
+            type: picture-glance
+          - camera_image: camera.garage
+            entities:
+              - binary_sensor.master_pir_garage
+              - automation.master_movimento_garage_notifica
+            title: Garage
+            type: picture-glance
+          - camera_image: camera.cancelletto
+            entities:
+              - binary_sensor.master_campanello
+              - automation.master_notifica_campanello
+            title: Cancelletto
+            type: picture-glance
+          - camera_image: camera.entrata
+            entities:
+              - camera.entrata
+            title: Garage Interno
+            type: picture-glance
+        type: vertical-stack
+    badges: []
+    title: demo
+    panel: true
